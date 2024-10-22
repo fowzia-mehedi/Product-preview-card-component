@@ -20,45 +20,122 @@
       align-items: center;
       background-color:hsl(30, 38%, 92%) ;
       height: 100vh;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-size: 14px;
+  
     }
     .container {
       display: flex;
-      height: 500px;
+      min-height: 500px;
       background-color: hsl(0, 0%, 100%);
       max-width: 650px;
+      border-radius: 15px;
      
       
     }
     .container>div {
       max-width: 50%;
+      box-sizing: border-box;
+      
     }
     img {
       width: 100%;
-      height: 500px;
+      height: 100%;
+      border-radius: 15px 0px 0px 15px;
+      
+    }
+    .white-box {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      
+    }
+    .capital
+    {
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+    }
+    h1 {
+      font-family: "Fraunces", serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p {
+      line-height: 25px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    span {
+      font-size:xx-large ;
+      font-weight: 700;
+      font-family: "Fraunces", serif;
+      font-optical-sizing: auto;
+      color:hsl(158, 36%, 37%) ;
+      margin-right: 1rem;
+    }
+   .button {
+    
+    height:3rem;
+    border-radius: 12px;
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color:hsl(0, 0%, 100%) ;
+    cursor: pointer;
+    }
+    .button:hover {
+      background-color:hsl(212, 21%, 14%)
+    }
+
+    .icon {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
+    }
+    .price {
+      display: flex;
+      align-items: center;
     }
   </style>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
 <body>
  <div class="container">
    <div><img src="./images/image-product-desktop.jpg" alt="image of the perfume"></div>
-   <div>
-     Perfume
+   <div class="white-box">
+     <div class="capital">Perfume</div>
 
-     Gabrielle Essence Eau De Parfum
+     <div><h1>Gabrielle Essence Eau De Parfum</h1></div>
 
-     A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-     Perfumer-Creator for the House of CHANEL.
+     <div><p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+     Perfumer-Creator for the House of CHANEL.</p></div>
 
-     $149.99
-     $169.99
-
-     Add to Cart
-  
+     <div class="price"><span>$149.99</span>
+     $169.99</div>
+     <div class="button">
+      
+        <img class="icon" src="./images/icon-cart.svg" alt="">
+        <p>Add to Cart</p>
+     
+     </div>
      <div class="attribution">
        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-       Coded by <a href="#">Your Name Here</a>.
+       Coded by <a href="#">Fowzia Mehedi</a>.
      </div>
+     
    </div>
  </div>
+ 
+ 
 </body>
 </html>
