@@ -46,9 +46,7 @@
       border-radius: 15px 0px 0px 15px;
       
     }
-    .image2 {
-      display: none;
-    }
+    
     .white-box {
       padding: 1.875rem;
       display: flex;
@@ -119,15 +117,11 @@
       .container>div {
         max-width: 100%;
       }
-      .image2 {
-        display: block;
-        width: 100%;
-       height: 100%;
-       border-radius: 15px 15px 0px 0px;
-      }
       .image1 {
-        display: none;
-      }
+     
+      border-radius: 15px 15px 0px 0px;
+      
+    }
     }
   </style>
 </head>
@@ -138,9 +132,11 @@
 <body>
  <div class="container">
    <div>
-     <img class="image1" src="./images/image-product-desktop.jpg" alt="image of the perfume">
-     <img class="image2" src="./images/image-product-mobile.jpg" alt="perfume image">
-
+     <picture>
+      <source media= "(max-width:430px)" srcset="./images/image-product-mobile.jpg">
+      <img class="image1" src="./images/image-product-desktop.jpg" alt="image of the perfume">
+    
+     </picture>
    </div>
    <div class="white-box">
      <div class="capital">Perfume</div>
